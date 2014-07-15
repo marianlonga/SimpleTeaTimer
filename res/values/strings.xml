@@ -8,6 +8,10 @@
     <string name="time_8min_button">8 min</string>
     <string name="time_10s_button">10 s</string>
     <string name="stop_timer_button">Stop</string>
+    <string name="green_tea_text_view">Green</string>
+    <string name="black_tea_text_view">Black</string>
+    <string name="herbal_tea_text_view">Herbal</string>
+    <string name="custom_tea_text_view">Custom</string>
     <string name="action_settings">Settings</string>
 
 </resources>

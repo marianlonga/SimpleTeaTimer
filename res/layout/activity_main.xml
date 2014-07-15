@@ -27,8 +27,9 @@
         android:layout_alignBaseline="@+id/time3minButton"
         android:layout_alignBottom="@+id/time3minButton"
         android:layout_toRightOf="@+id/time3minButton"
-        android:textSize="30sp"
-        android:text="@string/time_5min_button" />
+        android:text="@string/time_5min_button"
+        android:textColor="@color/blackTea_brown"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/time8minButton"
@@ -37,17 +38,8 @@
         android:layout_alignBaseline="@+id/time5minButton"
         android:layout_alignBottom="@+id/time5minButton"
         android:layout_toRightOf="@+id/time5minButton"
-        android:textSize="30sp"
-        android:text="@string/time_8min_button" />
-
-    <Button
-        android:id="@+id/time3minButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/timerProgressBar"
-        android:layout_below="@+id/countdownTextView"
-        android:layout_marginTop="32dp"
-        android:text="@string/time_3min_button"
+        android:text="@string/time_8min_button"
+        android:textColor="@color/herbalTea_green"
         android:textSize="30sp" />
 
     <ProgressBar
@@ -66,18 +58,73 @@
         android:id="@+id/stopTimerButton"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignLeft="@+id/time3minButton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="25dp"
-        android:text="@string/stop_timer_button" />
+        android:text="@string/stop_timer_button"
+        android:textColor="@color/cancel_red"
+        android:textSize="30sp" />
 
     <Button
-        android:id="@+id/time10sButton"
+        android:id="@+id/time3minButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/timerProgressBar"
+        android:layout_below="@+id/timerProgressBar"
+        android:layout_marginTop="28dp"
+        android:text="@string/time_3min_button"
+        android:textColor="@color/greenTea_green"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time5minButton"
+        android:layout_alignLeft="@+id/time5minButton"
+        android:text="@string/black_tea_text_view"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time8minButton"
+        android:layout_alignLeft="@+id/time8minButton"
+        android:text="@string/herbal_tea_text_view"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/time5minButton"
+        android:layout_alignLeft="@+id/time3minButton"
+        android:text="@string/green_tea_text_view"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <NumberPicker
+        android:id="@+id/minutesNumberPicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/time5minButton"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/secondsNumberPicker" />
+
+    <NumberPicker
+        android:id="@+id/secondsNumberPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignTop="@+id/minutesNumberPicker"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/secondsNumberPicker"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="72dp"
-        android:text="@string/time_10s_button" />
+        android:text="@string/custom_tea_text_view"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

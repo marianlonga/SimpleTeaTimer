@@ -120,10 +120,14 @@ int bool abc_config_actionMenuItemAllCaps 0x7f070005
 int bool abc_config_allowActionMenuItemTextWithIcon 0x7f070004
 int bool abc_config_showMenuShortcutsWhenKeyboardPresent 0x7f070003
 int bool abc_split_action_bar_is_narrow 0x7f070002
-int color abc_search_url_text_holo 0x7f080003
+int color abc_search_url_text_holo 0x7f080007
 int color abc_search_url_text_normal 0x7f080000
 int color abc_search_url_text_pressed 0x7f080002
 int color abc_search_url_text_selected 0x7f080001
+int color blackTea_brown 0x7f080005
+int color cancel_red 0x7f080003
+int color greenTea_green 0x7f080004
+int color herbalTea_green 0x7f080006
 int dimen abc_action_bar_default_height 0x7f090002
 int dimen abc_action_bar_icon_vertical_padding 0x7f090003
 int dimen abc_action_bar_progress_bar_size 0x7f09000a
@@ -247,7 +251,7 @@ int id action_context_bar 0x7f06001d
 int id action_menu_divider 0x7f060016
 int id action_menu_presenter 0x7f060017
 int id action_mode_close_button 0x7f060024
-int id action_settings 0x7f060044
+int id action_settings 0x7f060049
 int id activity_chooser_view_content 0x7f060025
 int id always 0x7f06000b
 int id beginning 0x7f060011
@@ -270,6 +274,7 @@ int id image 0x7f060027
 int id listMode 0x7f060001
 int id list_item 0x7f060029
 int id middle 0x7f060012
+int id minutesNumberPicker 0x7f060046
 int id never 0x7f060009
 int id none 0x7f060010
 int id normal 0x7f060000
@@ -286,6 +291,7 @@ int id search_mag_icon 0x7f060035
 int id search_plate 0x7f060036
 int id search_src_text 0x7f060037
 int id search_voice_btn 0x7f06003b
+int id secondsNumberPicker 0x7f060047
 int id shortcut 0x7f06002e
 int id showCustom 0x7f060007
 int id showHome 0x7f060004
@@ -294,7 +300,10 @@ int id split_action_bar 0x7f06001e
 int id stopTimerButton 0x7f060042
 int id submit_area 0x7f060039
 int id tabMode 0x7f060002
-int id time10sButton 0x7f060043
+int id textView1 0x7f060045
+int id textView2 0x7f060043
+int id textView3 0x7f060044
+int id textView4 0x7f060048
 int id time3minButton 0x7f06003f
 int id time5minButton 0x7f06003e
 int id time8minButton 0x7f060040
@@ -346,9 +355,13 @@ int string abc_searchview_description_submit 0x7f0b0007
 int string abc_searchview_description_voice 0x7f0b0008
 int string abc_shareactionprovider_share_with 0x7f0b000c
 int string abc_shareactionprovider_share_with_application 0x7f0b000b
-int string action_settings 0x7f0b0014
+int string action_settings 0x7f0b0018
 int string app_name 0x7f0b000d
+int string black_tea_text_view 0x7f0b0015
 int string countdown_text_view 0x7f0b000e
+int string custom_tea_text_view 0x7f0b0017
+int string green_tea_text_view 0x7f0b0014
+int string herbal_tea_text_view 0x7f0b0016
 int string stop_timer_button 0x7f0b0013
 int string time_10s_button 0x7f0b0012
 int string time_3min_button 0x7f0b000f
