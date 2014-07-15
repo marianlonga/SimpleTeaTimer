@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TeaTimer</string>
+    <string name="countdown_text_view">00:00.0</string>
+    <string name="time_3min_button">3 min</string>
+    <string name="time_5min_button">5 min</string>
+    <string name="time_8min_button">8 min</string>
+    <string name="time_10s_button">10 s</string>
+    <string name="stop_timer_button">Stop</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
