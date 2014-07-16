@@ -1,4 +1,6 @@
-package com.marianlonga.teatimer;
+package com.marianlonga.simpleteatimer;
+
+import com.marianlonga.simpleteatimer.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.media.MediaPlayer;

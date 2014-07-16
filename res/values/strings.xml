@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Tea Timer</string>
+    <string name="app_name">Simple Tea Timer</string>
     <string name="countdown_text_view">00:00.0</string>
     <string name="time_3min_button">3 min</string>
     <string name="time_5min_button">5 min</string>
