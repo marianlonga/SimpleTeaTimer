@@ -4,4 +4,5 @@
     <item name="greenTea_green" type="color">#397D02</item>
     <item name="blackTea_brown" type="color">#302014</item>
     <item name="herbalTea_green" type="color">#E59400</item>
+    <item name="background_color" type="color">#FCFFFC</item>
 </resources>

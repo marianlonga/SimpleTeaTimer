@@ -858,10 +858,11 @@ containing a value of this type.
         public static final int abc_split_action_bar_is_narrow=0x7f070002;
     }
     public static final class color {
-        public static final int abc_search_url_text_holo=0x7f080007;
+        public static final int abc_search_url_text_holo=0x7f080008;
         public static final int abc_search_url_text_normal=0x7f080000;
         public static final int abc_search_url_text_pressed=0x7f080002;
         public static final int abc_search_url_text_selected=0x7f080001;
+        public static final int background_color=0x7f080007;
         public static final int blackTea_brown=0x7f080005;
         public static final int cancel_red=0x7f080003;
         public static final int greenTea_green=0x7f080004;
@@ -1081,10 +1082,11 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
+        public static final int background=0x7f020057;
+        public static final int ic_launcher=0x7f020058;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f06003c;
+        public static final int TableLayout1=0x7f06003c;
         public static final int action_bar=0x7f06001c;
         public static final int action_bar_activity_content=0x7f060015;
         public static final int action_bar_container=0x7f06001b;
@@ -1142,17 +1144,17 @@ containing a value of this type.
         public static final int showHome=0x7f060004;
         public static final int showTitle=0x7f060006;
         public static final int split_action_bar=0x7f06001e;
-        public static final int stopTimerButton=0x7f060042;
+        public static final int stopTimerButton=0x7f060048;
         public static final int submit_area=0x7f060039;
         public static final int tabMode=0x7f060002;
-        public static final int textView1=0x7f060045;
-        public static final int textView2=0x7f060043;
-        public static final int textView3=0x7f060044;
-        public static final int textView4=0x7f060048;
-        public static final int time3minButton=0x7f06003f;
-        public static final int time5minButton=0x7f06003e;
-        public static final int time8minButton=0x7f060040;
-        public static final int timerProgressBar=0x7f060041;
+        public static final int textView1=0x7f06003f;
+        public static final int textView2=0x7f060040;
+        public static final int textView3=0x7f060041;
+        public static final int textView4=0x7f060045;
+        public static final int time3minButton=0x7f060042;
+        public static final int time5minButton=0x7f060043;
+        public static final int time8minButton=0x7f060044;
+        public static final int timerProgressBar=0x7f06003e;
         public static final int title=0x7f06002b;
         public static final int top_action_bar=0x7f060020;
         public static final int up=0x7f060021;

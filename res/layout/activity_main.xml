@@ -1,130 +1,167 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/RelativeLayout1"
+    android:id="@+id/TableLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.marianlonga.teatimer.MainActivity" >
+    android:orientation="vertical"
+    android:background="@drawable/background" >
 
-    <TextView
-        android:id="@+id/countdownTextView"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/countdown_text_view"
-        android:gravity="center_horizontal"
-        android:textSize="60sp"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:layout_margin="10dp" >
 
-    <Button
-        android:id="@+id/time5minButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/time3minButton"
-        android:layout_alignBottom="@+id/time3minButton"
-        android:layout_toRightOf="@+id/time3minButton"
-        android:text="@string/time_5min_button"
-        android:textColor="@color/blackTea_brown"
-        android:textSize="30sp" />
+	    <TextView
+	        android:id="@+id/countdownTextView"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/countdown_text_view"
+	        android:gravity="center"
+	        android:textSize="60sp"
+	        android:layout_weight="1" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/time8minButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/time5minButton"
-        android:layout_alignBottom="@+id/time5minButton"
-        android:layout_toRightOf="@+id/time5minButton"
-        android:text="@string/time_8min_button"
-        android:textColor="@color/herbalTea_green"
-        android:textSize="30sp" />
-
-    <ProgressBar
-        android:id="@+id/timerProgressBar"
-        style="?android:attr/progressBarStyleHorizontal"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/countdownTextView"
-        android:layout_below="@+id/countdownTextView"
-        android:progressDrawable="@android:drawable/progress_horizontal"
-        android:max="1000"
-        android:progress="0"
-        android:visibility="visible" />
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin" >
 
-    <Button
-        android:id="@+id/stopTimerButton"
+   	    <ProgressBar
+	        android:id="@+id/timerProgressBar"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:max="1000"
+	        android:progress="0"
+	        android:progressDrawable="@android:drawable/progress_horizontal"
+	        android:visibility="visible"
+	        android:layout_weight="1" />
+   	</LinearLayout>
+    
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignLeft="@+id/time3minButton"
-        android:layout_alignParentBottom="true"
-        android:text="@string/stop_timer_button"
-        android:textColor="@color/cancel_red"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/time3minButton"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/timerProgressBar"
-        android:layout_below="@+id/timerProgressBar"
-        android:layout_marginTop="28dp"
-        android:text="@string/time_3min_button"
-        android:textColor="@color/greenTea_green"
-        android:textSize="30sp" />
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin" >
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+   	    <TextView
+   	        android:id="@+id/textView1"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:layout_weight="1"
+   	        android:gravity="center"
+   	        android:text="@string/green_tea_text_view"
+   	        android:textAppearance="?android:attr/textAppearanceSmall"
+   	        android:textColor="@color/greenTea_green" />
+   	    
+   	    <TextView
+   	        android:id="@+id/textView2"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:layout_weight="1"
+   	        android:gravity="center"
+   	        android:text="@string/black_tea_text_view"
+   	        android:textAppearance="?android:attr/textAppearanceSmall"
+   	        android:textColor="@color/blackTea_brown" />
+
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/herbal_tea_text_view"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/herbalTea_green" />
+	    
+   	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/time5minButton"
-        android:layout_alignLeft="@+id/time5minButton"
-        android:text="@string/black_tea_text_view"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin" >
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        <Button
+	        android:id="@+id/time3minButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/time_3min_button"
+	        android:textColor="@color/greenTea_green"
+	        android:textSize="30sp"
+	        android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/time5minButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time_5min_button"
+            android:textColor="@color/blackTea_brown"
+            android:textSize="30sp"
+            android:layout_weight="1" />
+	
+	    <Button
+	        android:id="@+id/time8minButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/time_8min_button"
+	        android:textColor="@color/herbalTea_green"
+	        android:textSize="30sp"
+	        android:layout_weight="1" />
+    </LinearLayout>
+    
+   	<LinearLayout
+   	    android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/time8minButton"
-        android:layout_alignLeft="@+id/time8minButton"
-        android:text="@string/herbal_tea_text_view"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+   		<TextView
+   		    android:id="@+id/textView4"
+   		    android:layout_width="match_parent"
+   		    android:layout_height="wrap_content"
+   		    android:text="@string/custom_tea_text_view"
+   		    android:textAppearance="?android:attr/textAppearanceSmall"
+   		    android:gravity="center"
+   		    android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+   	
+	
+	<LinearLayout
+	    android:gravity="center"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+		<NumberPicker
+		    android:id="@+id/minutesNumberPicker"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" />
+	
+	    <NumberPicker
+	        android:id="@+id/secondsNumberPicker"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp" />
+    </LinearLayout>
+    
+	 
+   	<LinearLayout
+   	    android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/time5minButton"
-        android:layout_alignLeft="@+id/time3minButton"
-        android:text="@string/green_tea_text_view"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    	android:layout_marginRight="@dimen/activity_horizontal_margin" >
+   	    <Button
+	        android:id="@+id/stopTimerButton"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:text="@string/stop_timer_button"
+	        android:textColor="@color/cancel_red"
+	        android:textSize="30sp"
+	        android:padding="15dp"
+	        android:layout_weight="1"
+	        android:layout_marginTop="10dp" />
+   	</LinearLayout>
 
-    <NumberPicker
-        android:id="@+id/minutesNumberPicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/time5minButton"
-        android:layout_marginTop="32dp"
-        android:layout_toLeftOf="@+id/secondsNumberPicker" />
-
-    <NumberPicker
-        android:id="@+id/secondsNumberPicker"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignTop="@+id/minutesNumberPicker"
-        android:textSize="12sp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/secondsNumberPicker"
-        android:layout_centerHorizontal="true"
-        android:text="@string/custom_tea_text_view"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
-</RelativeLayout>
+</LinearLayout>
